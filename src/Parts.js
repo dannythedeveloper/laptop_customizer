@@ -1,4 +1,3 @@
-  
 import React from 'react';
 import STORE from './STORE';
 import slugify from 'slugify';
