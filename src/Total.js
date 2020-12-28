@@ -1,7 +1,7 @@
 import React from 'react';
 import STORE from './STORE';
 
-export default function total(props) {
+export default function Total(props) {
     return (
         <div className="summary__total">
             <div className="summary__total__label">Total</div>

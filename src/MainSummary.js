@@ -2,7 +2,7 @@ import React from 'react';
 import TOTAL from './Total';
 import Option from './Option';
 
-export default function mainSummary(props) {
+export default function MainSummary(props) {
     const summary = Object.keys(props.selected).map((feature, idx) => {
         const featureHash = feature + '-' + idx;
         const selectedOption = props.selected[feature];

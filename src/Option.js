@@ -1,7 +1,7 @@
 import React from 'react';
 import STORE from './STORE';
 
-export default function option(props){
+export default function Option(props){
     return (
         <div className="summary__option" key={props.featureHash}>
           <div className="summary__option__label">{props.feature} </div>

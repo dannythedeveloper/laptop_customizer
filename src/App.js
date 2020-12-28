@@ -44,7 +44,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <main>
-          <MainForm selected={this.state} updateFeature={this.updateFeature} />
+          <MainForm selected={this.state.selected} updateFeature={this.updateFeature} />
           <MainSummary selected={this.state.selected} />
         </main>
       </div>

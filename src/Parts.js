@@ -2,7 +2,7 @@ import React from 'react';
 import STORE from './STORE';
 import slugify from 'slugify';
 
-export default function parts(props) {
+export default function Parts(props) {
     return (
         <div key={props.itemHash} className="feature__item">
             <input
@@ -10,7 +10,7 @@ export default function parts(props) {
                 id={props.itemHash}
                 className="feature__option"
                 name={slugify(props.feature)}
-                checked={props.item.name === props.selected.name}
+                checked={props.checked}
                 onChange={e => props.updateFeature(props.feature, props.item)}
             />
             <label htmlFor={props.itemHash} className="feature__label">
@@ -18,4 +18,12 @@ export default function parts(props) {
             </label>
         </div>
     )
-} 
+}
+
+Parts.defaultProps = {
+    onItemChange: () => {},
+    itemHash: "",
+    item: {},
+    feature: "",
+    checked: false,
+  };
