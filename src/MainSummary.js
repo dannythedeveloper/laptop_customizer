@@ -1,5 +1,5 @@
 import React from 'react';
-import TOTAL from './Total';
+import Total from './Total';
 import Option from './Option';
 
 export default function MainSummary(props) {
@@ -20,7 +20,7 @@ export default function MainSummary(props) {
         <section className="main__summary">
             <h2>Your cart</h2>
             {summary}
-            <TOTAL key={'Summary total'} total={total} />
+            <Total key={'Summary total'} total={total} />
         </section>
     )
 }
